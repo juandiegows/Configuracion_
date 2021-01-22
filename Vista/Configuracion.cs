@@ -35,7 +35,7 @@ namespace Vista
             MessageBox.Show("Se ha restablecido correctamente");
         }
 
-        private void GuardarConfiguracion()
+        private bool GuardarConfiguracion()
         {
             Settings.Default.Mensaje = txtMensaje.Text;
             Settings.Default.Numero = (int)listaNumero.Value;
@@ -43,9 +43,11 @@ namespace Vista
             Settings.Default.Posicion = this.Location;
             Settings.Default.Tamaño = this.Size;
             Settings.Default.Save();
-            MessageBox.Show("Se ha Guardado correctamente");
+            return true;
+          
 
         }
+
         private void btnCargar_Click(object sender, EventArgs e)
         {
             CargarConfiguracion();
@@ -63,17 +65,15 @@ namespace Vista
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            GuardarConfiguracion();
+           if(GuardarConfiguracion())
+            {
+                MessageBox.Show("Se ha Guardado correctamente");
+            }
         }
 
         private void FormConfiguracion_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Settings.Default.Mensaje = txtMensaje.Text;
-            Settings.Default.Numero = (int)listaNumero.Value;
-            Settings.Default.Activo = cbActivo.Checked;
-            Settings.Default.Posicion = this.Location;
-            Settings.Default.Tamaño = this.Size;
-            Settings.Default.Save();
+            GuardarConfiguracion();
         }
     }
 }
