@@ -40,6 +40,9 @@
             // 
             // txtMensaje
             // 
+            this.txtMensaje.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtMensaje.Location = new System.Drawing.Point(12, 12);
             this.txtMensaje.Multiline = true;
             this.txtMensaje.Name = "txtMensaje";
@@ -48,8 +51,9 @@
             // 
             // cbActivo
             // 
+            this.cbActivo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.cbActivo.AutoSize = true;
-            this.cbActivo.Location = new System.Drawing.Point(513, 250);
+            this.cbActivo.Location = new System.Drawing.Point(537, 254);
             this.cbActivo.Name = "cbActivo";
             this.cbActivo.Size = new System.Drawing.Size(56, 17);
             this.cbActivo.TabIndex = 1;
@@ -58,13 +62,15 @@
             // 
             // listaNumero
             // 
-            this.listaNumero.Location = new System.Drawing.Point(369, 249);
+            this.listaNumero.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.listaNumero.Location = new System.Drawing.Point(393, 253);
             this.listaNumero.Name = "listaNumero";
             this.listaNumero.Size = new System.Drawing.Size(120, 20);
             this.listaNumero.TabIndex = 2;
             // 
             // btnGuardar
             // 
+            this.btnGuardar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnGuardar.Location = new System.Drawing.Point(12, 250);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(75, 23);
@@ -75,6 +81,7 @@
             // 
             // btnRestablecer
             // 
+            this.btnRestablecer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnRestablecer.Location = new System.Drawing.Point(93, 250);
             this.btnRestablecer.Name = "btnRestablecer";
             this.btnRestablecer.Size = new System.Drawing.Size(75, 23);
@@ -85,6 +92,7 @@
             // 
             // btnCargar
             // 
+            this.btnCargar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnCargar.Location = new System.Drawing.Point(174, 250);
             this.btnCargar.Name = "btnCargar";
             this.btnCargar.Size = new System.Drawing.Size(75, 23);
